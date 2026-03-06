@@ -1,5 +1,16 @@
 # E-commerce-web-app-group14
 
+# Group Members
+
+Abdul Latif Zakiya - 052441360094
+Arthur Frederick - 052441360186
+Noah Krah Dompee - 052441360189
+Zakari Mumuni - 052441360293
+Amoako Angela Blay - 052441360093
+Justice owusu achiaw afriyie - 052441360026
+Inusah Mubarick - 052441360182
+
+
 # Brief Project Report
 
 ## Project Title
