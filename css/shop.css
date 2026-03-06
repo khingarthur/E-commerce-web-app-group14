@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F3F4F6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    background-color: #1E3A8A;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main-header2 {
+    background: #ffffff;
+    border-bottom: 1px solid #e6e8ef;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 56px;
+}
+
+.header-actions2 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.shop-btn,
+.logout-btn {
+    text-decoration: none;
+    border: 1px solid #d1d5db;
+    color: #1f2937;
+    background: #ffffff;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.logout-btn {
+    color: #1d4ed8;
+}
+
+.shop-btn:hover,
+.logout-btn:hover {
+    background: #f8fafc;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+.cart-icon {
+    background: white;
+    color: #1E3A8A;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Grouped common button styles to reduce repetition */
+.btn-primary, .btn-outline {
+    padding: 8px 14px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background-color: #2563EB;
+}
+
+.btn-outline {
+    border: 1px solid white;
+}
+
+.main-footer {
+    background-color: #111827;
+    color: white;
+    padding: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.shop-container {
+    width: min(1100px, 92%);
+    margin: 35px auto 0;
+}
+
+.shop-title {
+    color: #111827;
+    margin: 0 0 22px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+    padding: 14px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 170px;
+    object-fit: contain;
+    background-color: #F9FAFB;
+    border-radius: 6px;
+}
+
+.product-name {
+    font-size: 20px;
+    margin: 12px 0 6px;
+    color: #111827;
+}
+
+.product-price {
+    margin: 0 0 12px;
+    color: #374151;
+    font-weight: 600;
+}
+
+.add-btn {
+    width: 100%;
+    background-color: #2563EB;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.add-btn:hover {
+    background-color: #1D4ED8;
+}

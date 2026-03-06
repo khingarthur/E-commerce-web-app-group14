@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body { background-color: #f4f7f9; }
+
+/* Header */ 
+
+
+
+/* Layout */
+.main-container { display: flex; min-height: 80vh; }
+
+/* .sidebar {
+    width: 250px;
+    background: white;
+    border-right: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.sidebar ul { list-style: none; }
+.sidebar li { padding: 15px 25px; color: #555; cursor: pointer; }
+.sidebar li.active { background: #1e60d5; color: white; }
+.sidebar li a { text-decoration: none; color: inherit; }
+.sidebar i { margin-right: 10px; } */
+
+/* Content & Card */
+.content { flex: 1; padding: 40px; }
+.card {
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.form-group { margin-bottom: 20px; }
+.row { display: flex; gap: 20px; }
+.row .form-group { flex: 1; }
+
+input, select {
+    width: 100%; padding: 10px;
+    border: 1px solid #ddd; border-radius: 4px;
+    margin-top: 5px; background: #fafafa;
+}
+
+.upload-box {
+    border: 2px dashed #ccd;
+    padding: 40px; text-align: center;
+    border-radius: 8px; color: #888;
+    margin-top: 5px;
+}
+
+.upload-input {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 12px;
+    background: #fafafa;
+}
+
+.submit-btn {
+    background: #1e60d5; color: white; border: none;
+    padding: 12px 30px; border-radius: 4px; width: 100%; cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    background: #34495e; color: white; padding: 40px; margin-top: 50px;
+}
+
+.footer-grid {
+    display: flex; justify-content: space-around;
+    max-width: 1200px; margin: auto;
+}
+
+.footer-col h4 { margin-bottom: 15px; font-size: 0.9rem; text-transform: uppercase; opacity: 0.8; }
+.footer-col p { font-size: 0.85rem; margin-bottom: 8px; opacity: 0.7; }
+
+/* Social Icons */
+.social-icons i { margin-right: 15px; cursor: pointer; font-size: 1.2rem; }
+.colored i { padding: 8px; border-radius: 4px; }
+.bg-fb { background: #3b5998; }
+.bg-tw { background: #00acee; }
+.bg-ig { background: #e1306c; }
+
+
+ 

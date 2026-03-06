@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #F3F4F6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-header {
+    background-color: #1E3A8A;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-icon {
+    background: white;
+    color: #1E3A8A;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Grouped common button styles to reduce repetition */
+.btn-primary, .btn-outline {
+    padding: 8px 14px;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.btn-primary {
+    background-color: #2563EB;
+}
+
+.btn-outline {
+    border: 1px solid white;
+}
+
+.main-footer {
+    background-color: #111827;
+    color: white;
+    padding: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+img{
+    max-height: 50px; object-fit: contain;
+    max-width: 60px; object-fit: contain;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.product{
+    margin-right: 30px;
+    flex: 1;
+}
+
+.sidebar{
+    margin-top: 10px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    background-color: #1E3A8A;
+    padding: 16px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+
+}
+
+.sidebar a {
+    display: block;
+    color: #374151;
+    background-color: #F3F4F6;
+    padding: 11px 18px;
+    margin: 0;
+    text-decoration: none;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 1px 3px rgba(15, 23, 42, 0.06);
+}
+
+.sidebar a:hover {
+    background-color: #EFF6FF;
+    color: #1D4ED8;
+}
+
+.sidebar a:last-of-type {
+    margin-bottom: 0;
+}
+
+.sidebar br {
+    display: none;
+}
+
+
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Add padding and a bottom border to each cell */
+th, td {
+    text-align: left;
+    padding: 20px 15px; /* Adds 20px space top/bottom, 15px left/right */
+    border-bottom: 1px solid #eaedf1; /* Adds the subtle gray line between rows */
+    vertical-align: middle; /* Vertically centers the text with the images */
+}
+
+.delete-btn {
+    background-color: #DC2626;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.delete-btn:hover {
+    background-color: #B91C1C;
+}
+
+/* Add this to control the layout inside the first column */
+.product-cell {
+    display: flex;
+    align-items: center; /* Vertically centers the text with the image */
+    gap: 15px; /* Adjust this value to bring the text closer or further from the image */
+}
+
+/* Update your ID selector to a class selector */
+.product-name {
+    font-weight: bold;
+    color: #1E3A8A;
+}
+
