@@ -2,13 +2,14 @@
 
 # Group Members
 
-Abdul Latif Zakiya - 052441360094
-Arthur Frederick - 052441360186
-Noah Krah Dompee - 052441360189
-Zakari Mumuni - 052441360293
-Amoako Angela Blay - 052441360093
-Justice owusu achiaw afriyie - 052441360026
-Inusah Mubarick - 052441360182
+- Abdul Latif Zakiya - 052441360094
+- Arthur Frederick - 052441360186
+- Noah Krah Dompee - 052441360189
+- Zakari Mumuni - 052441360293
+- Amoako Angela Blay - 052441360093
+- Justice Owusu Achiaw Afriyie - 052441360026
+- Inusah Mubarick - 052441360182
+- Kamassah Akorfa Esther - 052541360344
 
 
 # Brief Project Report
@@ -28,11 +29,11 @@ ShopEase is an e-commerce web application designed to demonstrate online shoppin
 
 - Role-based access
   - General users can browse products and manage their cart
-  - Admin-only access for dashboard
+  - Admin-only access for dashboard to manage products
 
 - Product browsing and shopping
   - Public shop page for browsing available products
-  - Product listing (in cart) is rendered from product storage in session
+  - Product listing (in cart) is rendered from product storage in user's session
   - Add-to-cart actions with immediate feedback messages
 
 - Cart management
@@ -47,7 +48,7 @@ ShopEase is an e-commerce web application designed to demonstrate online shoppin
   - Empty-cart functionality implemented with user-friendly error messaging
 
 - UI consistency updates
-  - Different header behavior for logged-in vs guest shop experience
+  - Different header behavior for logged-in and non logged-in users
   - Footer alignment and style consistency across key pages (`index`, `about`, `contact`, `shop`, `cart`)
   - Responsive styling adjustments for improved readability
 
