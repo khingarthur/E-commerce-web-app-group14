@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login - ShopEase</title>
+	<link rel="stylesheet" href="css/auth.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="logo">ShopEase</div>
+
+		<nav class="nav-links">
+			<a href="index.html">Home</a>
+			<a href="./php/shop.php">Shop</a>
+			<a href="aboutUs.html">About</a>
+			<a href="contactUs.html">Contact</a>
+		</nav>
+
+		<div class="header-actions">
+			<a href="./php/go_to_cart.php" class="cart-icon">
+				🛒 <span class="cart-count">View Cart</span>
+			</a>
+			<a href="login.html" class="btn-outline">Login</a>
+			<a href="register.html" class="btn-primary">Register</a>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="card">
+			<h1 class="title">Login</h1>
+			<p id="login-note" style="display:none; color:#1d4ed8; margin-bottom:12px; text-align:center; font-weight:600;">Please login to add products to cart.</p>
+			<p id="view-cart-note" style="display:none; color:#1d4ed8; margin-bottom:12px; text-align:center; font-weight:600;">Please login to see products in your cart.</p>
+
+			<form action="./php/auth.php" method="post">
+				<input type="hidden" name="action" value="login">
+				<div class="form-group">
+					<label for="email">Email Address</label>
+					<input type="email" id="email" name="email" placeholder="Enter your email" required>
+				</div>
+
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" id="password" name="password" placeholder="Enter your password" required>
+				</div>
+
+				<button type="submit" class="btn">Login</button>
+				<p id="login-error" style="display:none; color:#dc2626; margin-top:10px; text-align:center; font-weight:600;">Incorrect username or password.</p>
+
+				<p class="help-link"><a href="contactUs.html">Forgot Password?</a></p>
+
+				<hr class="divider">
+
+				<p class="switch-text">Don't have an account? <a href="register.html">Sign Up</a></p>
+			</form>
+		</section>
+	</main>
+
+	<footer class="main-footer">
+
+        <p class="copyright">
+            &copy; 2026 ShopEase. All rights reserved.
+        </p>
+    </footer>
+	<script>
+		const params = new URLSearchParams(window.location.search);
+		const loginError = document.getElementById('login-error');
+		const loginNote = document.getElementById('login-note');
+		const viewCartNote = document.getElementById('view-cart-note');
+		const emailInput = document.getElementById('email');
+
+		if (params.get('error') === 'invalid_credentials' && loginError) {
+			loginError.style.display = 'block';
+		}
+
+		if (params.get('error') === 'login_required' && loginNote) {
+			loginNote.style.display = 'block';
+		}
+
+		if (params.get('error') === 'view_cart_login_required' && viewCartNote) {
+			viewCartNote.style.display = 'block';
+		}
+
+		const oldEmail = params.get('email');
+		if (oldEmail && emailInput) {
+			emailInput.value = oldEmail;
+		}
+	</script>
+</body>
+</html>

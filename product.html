@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <title>Products - ShopEase</title>
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">ShopEase</div>
+
+    </header>
+    
+    <main>
+        <nav class="sidebar" >
+            <a href="./php/dashboard.php">View Products</a> <br>
+            <a href="./php/addProduct.php">Add Product</a> <br>
+            <a href="./php/logout.php">Logout</a> <br>
+        </nav>
+        <section class="product">
+            <h2>Products</h2>
+            <div>
+                <table>
+                    <tbody>
+                        <tr> 
+                            <th>Product</th> 
+                            <th>Price</th> 
+                            <th>Delete</th> 
+                        </tr>
+                        <tr> 
+                            <td class="product-cell">
+                                <img src="./products/phone.png">
+                                <span class="product-name">Mobile Phone</span>
+                            </td> 
+                            <td>$250</td> 
+                            <td><button class="delete-btn">Delete</button></td> 
+                        </tr>
+
+                        <tr> 
+                            <td class="product-cell">
+                                <img src="./products/camera.png">
+                                <span class="product-name">Camera</span>
+                            </td> 
+                            <td>$300</td> 
+                            <td><button class="delete-btn">Delete</button></td> 
+                        </tr>
+
+                        <tr> 
+                            <td class="product-cell">
+                                <img src="./products/laptop.png">
+                                <span class="product-name">Laptop</span>
+                            </td> 
+                            <td>$800</td> 
+                            <td><button class="delete-btn">Delete</button></td> 
+                        </tr>
+
+                        <tr> 
+                            <td class="product-cell">
+                                <img src="./products/earphone.png">
+                                <span class="product-name">Headphones</span>
+                            </td> 
+                            <td>$150</td> 
+                            <td><button class="delete-btn">Delete</button></td> 
+                        </tr>   
+
+                        <tr> 
+                            <td class="product-cell">
+                                <img src="./products/shoe.png">
+                                <span class="product-name">Shoes</span>
+                            </td> 
+                            <td>$200</td> 
+                            <td><button class="delete-btn">Delete</button></td> 
+                        </tr>   
+
+                        </tbody>
+                    </table>
+            </div>
+
+        </section>
+    </main>
+   
+
+    <footer class="main-footer">
+
+        <p class="copyright">
+            &copy; 2026 ShopEase. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
