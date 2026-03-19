@@ -7,10 +7,6 @@
 // - ID and currency helpers
 // -------------------------------------------------
 
-<<<<<<< HEAD
-=======
-// Returns the initial product catalog used to seed the session store.
->>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
 function getDefaultProducts(): array
 {
     // Starter products used when session has no products yet.
@@ -48,10 +44,6 @@ function getDefaultProducts(): array
     ];
 }
 
-<<<<<<< HEAD
-=======
-// Ensures the products session array exists and is initialized.
->>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
 function ensureProductsSession(): void
 {
     // Create products array in session if missing.
@@ -59,11 +51,6 @@ function ensureProductsSession(): void
         $_SESSION['products'] = getDefaultProducts();
     }
 }
-
-<<<<<<< HEAD
-=======
-// Generates a URL-safe product id based on name plus a timestamp.
->>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
 function createProductId(string $name): string
 {
     // Convert product name into a simple unique id.
@@ -78,10 +65,6 @@ function createProductId(string $name): string
     return $base . '-' . time();
 }
 
-<<<<<<< HEAD
-=======
-// Formats a numeric amount as a dollar currency string.
->>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
 function formatMoney(float $amount): string
 {
     // Display value like $250.00

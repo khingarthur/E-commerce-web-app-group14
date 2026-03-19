@@ -17,15 +17,6 @@ if (!isset($_SESSION['users']) || !is_array($_SESSION['users'])) {
             'email' => 'admin@shopease.com',
             'password' => 'admin123',
             'role' => 'admin'
-<<<<<<< HEAD
-        ],
-        [
-            'name' => 'user1',
-            'email' => 'user1@gmail.com',
-            'password' => 'user1',
-            'role' => 'customer'
-=======
->>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
         ]
     ];
 }
@@ -51,16 +42,7 @@ function findUserIndexByEmail(array $users, string $email): int
     return -1;
 }
 
-<<<<<<< HEAD
 
-=======
-// Builds a URL query string from an associative array of parameters.
-function buildQuery(array $params): string
-{
-    // Build URL query string safely.
-    return http_build_query($params);
-}
->>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
 
 
 if ($action === 'register') {
@@ -72,11 +54,7 @@ if ($action === 'register') {
 
     if ($name === '' || $email === '' || $password === '' || $confirmPassword === '') {
         // Keep typed name/email so user does not retype.
-<<<<<<< HEAD
         header('Location: ../register.html?' . http_build_query([
-=======
-        header('Location: ../register.html?' . buildQuery([
->>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
             'error' => 'missing_fields',
             'fullName' => $name,
             'email' => $email
@@ -86,11 +64,7 @@ if ($action === 'register') {
 
     if ($password !== $confirmPassword) {
         // Password confirmation failed.
-<<<<<<< HEAD
         header('Location: ../register.html?' . http_build_query([
-=======
-        header('Location: ../register.html?' . buildQuery([
->>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
             'error' => 'password_mismatch',
             'fullName' => $name,
             'email' => $email
@@ -100,11 +74,7 @@ if ($action === 'register') {
 
     if (findUserIndexByEmail($_SESSION['users'], $email) !== -1) {
         // Email already exists.
-<<<<<<< HEAD
         header('Location: ../register.html?' . http_build_query([
-=======
-        header('Location: ../register.html?' . buildQuery([
->>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
             'error' => 'email_exists',
             'fullName' => $name,
             'email' => $email
@@ -133,11 +103,7 @@ if ($action === 'login') {
 
     if ($userIndex === -1) {
         // Invalid email.
-<<<<<<< HEAD
         header('Location: ../login.html?' . http_build_query([
-=======
-        header('Location: ../login.html?' . buildQuery([
->>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
             'error' => 'invalid_credentials',
             'email' => $email
         ]));
@@ -148,11 +114,7 @@ if ($action === 'login') {
 
     if (($user['password'] ?? '') !== $password) {
         // Invalid password.
-<<<<<<< HEAD
-        header('Location: ../login.html?' . http_build_query([
-=======
-        header('Location: ../login.html?' . buildQuery([
->>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
+    header('Location: ../login.html?' . http_build_query([
             'error' => 'invalid_credentials',
             'email' => $email
         ]));
