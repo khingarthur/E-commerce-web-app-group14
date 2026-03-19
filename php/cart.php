@@ -9,6 +9,10 @@ session_start();
 // -------------------------------------------------
 
 header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
+<<<<<<< HEAD
+=======
+header('Pragma: no-cache');
+>>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
 header('Expires: 0');
 
 $action = $_POST['action'] ?? '';
@@ -41,7 +45,14 @@ if ($checkoutError !== '') {
     unset($_SESSION['checkout_error']);
 }
 
+<<<<<<< HEAD
 function formatCurrency($amount) {
+=======
+// Formats cart prices consistently for display in the UI.
+function formatCurrency($amount)
+{
+    // Display value like $12.50
+>>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
     return '$' . number_format($amount, 2);
 }
 

@@ -23,8 +23,12 @@ body {
 }
 
 .main-header2 {
+<<<<<<< HEAD
     background-color: #1E3A8A;
     color: white;
+=======
+    background: #ffffff;
+>>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
     border-bottom: 1px solid #e6e8ef;
     display: flex;
     justify-content: flex-end;

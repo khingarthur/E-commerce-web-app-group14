@@ -26,7 +26,13 @@ $priceRaw = trim($_POST['price'] ?? '');
 $price = (float) $priceRaw;
 
 // Redirects back to the add-product form with an error and previous inputs.
+<<<<<<< HEAD
 function redirectAddProductWithError($error, $name, $priceRaw) {
+=======
+function redirectAddProductWithError(string $error, string $name, string $priceRaw): void
+{
+    // Redirect back with error + old text values.
+>>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
     $query = http_build_query([
         'error' => $error,
         'product_name' => $name,

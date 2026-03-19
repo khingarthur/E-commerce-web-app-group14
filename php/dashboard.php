@@ -2,7 +2,16 @@
 session_start();
 require_once __DIR__ . '/product_store.php';
 
+<<<<<<< HEAD
 // Admin dashboard: admin only, shows products, deletes selected product
+=======
+// -------------------------------------------------
+// Admin dashboard
+// - Admin only page
+// - Shows products
+// - Deletes selected product
+// -------------------------------------------------
+>>>>>>> 52f08e5956ddd6d27039dc329b7d2274341f1d27
 
 header('Cache-Control: no-store, no-cache, must-revalidate, max-age=0');
 header('Pragma: no-cache');
